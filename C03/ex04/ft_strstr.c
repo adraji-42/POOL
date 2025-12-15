@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 08:21:07 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/22 15:07:20 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:26:25 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,9 @@ char	*ft_strstr(char *str, char *to_find)
 	{
 		j = 0;
 		while (str[i + j] == to_find[j] && to_find[j] != '\0')
-		{
 			j++;
-		}
 		if (to_find[j] == '\0')
-		{
 			return (&str[i]);
-		}
 		i++;
 	}
 	return (0);

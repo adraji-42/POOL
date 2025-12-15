@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 12:12:48 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/17 09:10:18 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:17:46 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
 
 void	ft_putchar(char c)
 {
@@ -19,9 +19,7 @@ void	ft_putchar(char c)
 void	ft_is_negative(int n)
 {
 	if (n < 0)
-	{
 		ft_putchar('N');
-		return ;
-	}
-	ft_putchar('P');
+	else
+		ft_putchar('P');
 }

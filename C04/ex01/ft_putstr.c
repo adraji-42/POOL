@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 13:47:51 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/21 13:51:44 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:27:43 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,6 @@ void	ft_putstr(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i])
-	{
-		write(1, &str[i], 1);
-		i ++;
-	}
+	while (*str)
+		write(1, str++, 1);
 }

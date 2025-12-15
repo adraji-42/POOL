@@ -3,52 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 15:28:17 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/26 01:59:47 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:29:01 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	skip_whitespace(char *str, int i)
+int ft_atoi(const char *nptr)
 {
-	while (str[i] == ' ' || (str[i] > 8 && str[i] < 14))
-		i++;
-	return (i);
-}
+	long	n;
+	int		signe;
 
-int	get_sign(char *str, int *i)
-{
-	int	sign;
-
-	sign = 0;
-	while (str[*i] == '+' || str[*i] == '-')
+	n = 0;
+	signe = 1;
+	while (*nptr && ((*nptr == ' ') || (*nptr >= 9 && *nptr <= 13)))
+		nptr++;
+	while (*nptr == '-' || *nptr == '+')
 	{
-		if (str[*i] == '-')
-			sign++;
-		(*i)++;
+		if (*nptr == '-')
+			signe *= -1;
+		nptr++;
 	}
-	if ((sign % 2) != 0)
+	while (*nptr && *nptr >= '0' && *nptr <= '9')
 	{
-		return (-1);
+		n = n * 10 + (*nptr - '0');
+		nptr++;
 	}
-	return (1);
-}
-
-int	ft_atoi(char *str)
-{
-	int	i;
-	int	sign;
-	int	num;
-
-	i = 0;
-	num = 0;
-	i = skip_whitespace(str, i);
-	sign = get_sign(str, &i);
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		num = num * 10 + (str[i] - '0');
-		i++;
-	}
-	return (num * sign);
+	return ((int)(n * signe));
 }

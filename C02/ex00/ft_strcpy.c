@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 19:46:44 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/19 11:46:10 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:22:43 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strcpy(char *dest, char *src)
 	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
-		i ++;
+		i++;
 	}
 	dest[i] = '\0';
 	return (dest);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 08:53:25 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/27 14:29:52 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:34:08 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,7 @@ int	main(int argc, char **argv)
 	{
 		i = 0;
 		while (argv[j][i])
-		{
-			ft_putchar(argv[j][i]);
-			i++;
-		}
+			ft_putchar(argv[j][i++]);
 		ft_putchar('\n');
 		j++;
 	}

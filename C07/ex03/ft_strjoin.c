@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 14:06:26 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/29 18:09:00 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:38:22 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,17 +78,13 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	{
 		result = malloc(1);
 		if (result == NULL)
-		{
 			return (NULL);
-		}
 		result[0] = '\0';
 		return (result);
 	}
 	result = malloc((ft_full_size(size, strs, sep) + 1) * sizeof(char));
 	if (result == NULL)
-	{
 		return (NULL);
-	}
 	result = ft_fill_in(size, strs, sep, result);
 	return (result);
 }

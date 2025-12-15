@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 18:37:40 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/17 23:50:51 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:22:43 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_rev_int_tab(int *tab, int size)
 		save = tab[i];
 		tab[i] = tab[j];
 		tab[j] = save;
-		i ++;
+		i++;
 		j --;
 	}
 }

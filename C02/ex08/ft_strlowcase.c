@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 09:36:13 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/19 12:04:43 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:24:17 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,8 @@ char	*ft_strlowcase(char *str)
 	while (str[i] != '\0')
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
-		{
 			str[i] += 32;
-		}
-		i ++;
+		i++;
 	}
 	return (str);
 }

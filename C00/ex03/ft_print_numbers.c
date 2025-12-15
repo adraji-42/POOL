@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 09:05:38 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/17 09:09:01 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:17:23 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
 
 void	ft_putchar(char c)
 {
@@ -18,12 +18,9 @@ void	ft_putchar(char c)
 
 void	ft_print_numbers(void)
 {
-	int	zero;
+	char	zero;
 
-	zero = 0;
-	while (zero < 10)
-	{
-		ft_putchar (zero + '0');
-		zero ++;
-	}
+	zero = '0';
+	while (zero <= '9')
+		ft_putchar (zero++);
 }

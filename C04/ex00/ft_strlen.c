@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 13:17:56 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/26 01:49:09 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:27:15 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
-	int	i;
+	int	len;
 
-	i = 0;
-	while (str[i])
-	{
-		i ++;
-	}
-	return (i);
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
 }

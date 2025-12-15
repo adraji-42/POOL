@@ -3,52 +3,40 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 21:26:02 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/28 21:58:13 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:37:13 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*ft_strcpy(char *dest, char *src)
+int	ft_strlen(const char *s)
 {
-	int	i;
+	int	len;
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i ++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
 }
 
-int	ft_strsize(char *str)
+char	*ft_strdup(const char *s1)
 {
-	int	size;
+	int		i;
+	char	*s;
 
-	size = 0;
-	while (str[size])
-	{
-		size++;
-	}
-	return (size + 1);
-}
-
-char	*ft_strdup(char *src)
-{
-	int			src_size;
-	char		*dup;
-
-	src_size = ft_strsize(src);
-	dup = malloc(src_size * sizeof(char));
-	if (dup == NULL)
-	{
+	if (!s1)
 		return (NULL);
+	i = 0;
+	s = malloc(sizeof(char) * (ft_strlen(s1) + 1));
+	if (!s)
+		return (NULL);
+	while (s1[i])
+	{
+		s[i] = s1[i];
+		i++;
 	}
-	ft_strcpy(dup, src);
-	return (dup);
+	return (s[i] = '\0', s);
 }

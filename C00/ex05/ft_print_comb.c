@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 12:21:15 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/16 13:41:10 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:18:07 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
 
 void	ft_print_comb(void)
 {
@@ -37,9 +37,4 @@ void	ft_print_comb(void)
 		}
 		a++;
 	}
-}
-
-int main ()
-{
-	ft_print_comb();
 }

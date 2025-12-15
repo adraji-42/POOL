@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 20:39:19 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/18 00:30:34 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:21:55 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,7 @@ void	ft_sort_int_tab(int *tab, int size)
 		while (j < size)
 		{
 			if (tab[i] > tab[j])
-			{
 				ft_swap(&tab[i], &tab[j]);
-			}
 			j++;
 		}
 		i++;

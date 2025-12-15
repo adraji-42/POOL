@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 11:37:39 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/24 15:08:28 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:32:10 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,9 @@ int	ft_iterative_factorial(int nb)
 	int	i;
 
 	if (nb == 0)
-	{
 		return (1);
-	}
 	if (nb < 0)
-	{
 		return (0);
-	}
 	i = 1;
 	while (nb > 1)
 	{

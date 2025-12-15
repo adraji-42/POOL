@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adraji <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 20:22:40 by adraji            #+#    #+#             */
-/*   Updated: 2025/07/19 08:17:53 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/15 08:22:58 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,16 @@ int	ft_str_is_alpha(char *str)
 	int	i;
 
 	if (str[0] == '\0')
-	{
 		return (1);
-	}
 	i = 0;
 	while (str[i] != '\0')
 	{
 		if (!(str[i] >= 'a' && str[i] <= 'z'))
 		{
 			if (!(str[i] >= 'A' && str[i] <= 'Z'))
-			{
 				return (0);
-			}
 		}
-		i ++;
+		i++;
 	}
 	return (1);
 }
